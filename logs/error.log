@@ -1,0 +1,90 @@
+[26-Nov-2018 10:11:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/phpframework/p...', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:15:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/phpframework/p...', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:16:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:16:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:20:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:20:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:24:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:24:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/page/about-us', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
+[26-Nov-2018 10:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function match_uri() in C:\xampp\htdocs\PHPFramework\src\Router.php:7
+Stack trace:
+#0 C:\xampp\htdocs\PHPFramework\public\index.php(20): Router->handle('/favicon.ico', '')
+#1 {main}
+  thrown in C:\xampp\htdocs\PHPFramework\src\Router.php on line 7
