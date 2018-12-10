@@ -1,7 +1,7 @@
 <?php
 require_once "../app/config.php";
 require_once "../app/routes.php";
-require_once "/../vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
 require_once "../src/Router.php";
 
@@ -12,7 +12,7 @@ if($config["env"] == "dev"){
     ini_set("display_errors", "on");
     error_reporting(E_ALL);
 }
-var_dump($_SERVER);
+// var_dump($_SERVER);
 phpinfo();
 
 $url = $_SERVER["REQUEST_URI"];// ex. /user/23?page=2, REQUEST_URI imi da string-ul /user/
