@@ -3,8 +3,12 @@
     "description": "",
     "autoload":{
         "psr-4":{
-            "Framework\\":"src",
+            "Framework\\":"src/",
             "App\\":"app/"
         }
+    },
+    "require": {
+        "twig/twig": "2.0",
+        "phpmailer/phpmailer": "^6.0"
     }
 }
