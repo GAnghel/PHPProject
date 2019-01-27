@@ -5,6 +5,6 @@ use \Framework\Utils\File;
 
 class IndexController extends \Framework\BaseController{
     public function indexAction(){
-        return $this->view("user/index.html");
+        return $this->view("default/index.html");
     }
 }
