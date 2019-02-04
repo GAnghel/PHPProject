@@ -2,11 +2,11 @@
 require_once "../app/config.php";
 require_once "../app/routes.php";
 require_once "../vendor/autoload.php";
-
 //require_once "../src/Router.php";
-use Tracy\Debugger;
+//use Tracy\Debugger;
 
-Debugger::enable(Debugger::PRODUCTION);
+
+//Debugger::enable(Debugger::PRODUCTION);
 
 ini_set("extension_dir", 'C:\xampp\php\ext');
 ini_set("error_log", __DIR__."/../logs/error.log");
@@ -15,7 +15,7 @@ ini_set("display_errors", "off");
 if(\App\Config::ENV === 'dev'){
     ini_set("display_errors", "on");
     error_reporting(E_ALL);
-    Debugger::enable(Debugger::DEVELOPMENT);
+    //Debugger::enable(Debugger::DEVELOPMENT);
 }
 // var_dump($_SERVER);
 //phpinfo();
