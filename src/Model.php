@@ -8,7 +8,12 @@ use App\Config;
 abstract class Model
 {
     protected $table;
-
+    public function executeStatement(string $stmt, array $params){
+        $pdo = $this->newDbCon();
+        $statement = $pdo->prepare($stmt);
+        $statement->execute($params);
+        return $statement->fetch();
+    }
     public function newDbCon($resultAsArray = false)
     {
         
