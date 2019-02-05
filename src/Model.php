@@ -8,15 +8,8 @@ use App\Config;
 abstract class Model
 {
     protected $table;
-    public function executeStatement(string $stmt, array $params){
-        $pdo = $this->newDbCon();
-        $statement = $pdo->prepare($stmt);
-        $statement->execute($params);
-        return $statement->fetch();
-    }
     public function newDbCon($resultAsArray = false)
     {
-        
         $dsn = Config::DB['driver'];
         $dsn .= ":host=".Config::DB['host'];
         $dsn .= ";dbname=".Config::DB['dbname'];
@@ -39,10 +32,7 @@ abstract class Model
             throw new PDOException($e->getMessage(), (int)$e->getCode());
         }
 
-
-
     }
-
     /**
      *Return all data from table
      */
@@ -65,8 +55,25 @@ abstract class Model
 
         return $stmt->fetch();
     }
-
+    
     /**
+     *Find data with values
+     * if $like is not set it will search using the = sql operator
+     * if $like is set it will search using the LIKE sql operator
+     *
+     * return false or an object
+     */
+    public function find(array $data, bool $like = false)
+    {
+        list($columns, $values) = $this->prepareDataSearchForStmt($data, $like);
+
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where $columns");
+        $stmt->execute($values);
+
+        return $stmt->fetch();
+    }
+/**
      * this function will prepare data to be used in sql statement
      * 1. Will extract values from $data
      * 2. Will create the prepared sql string with columns from $data
@@ -96,22 +103,21 @@ abstract class Model
         return [$columns, $values];
     }
 
+    
+
     /**
-     *Find data with values
-     * if $like is not set it will search using the = sql operator
-     * if $like is set it will search using the LIKE sql operator
-     *
-     * return false or an object
+     * Insert new data in table
      */
-    public function find(array $data, bool $like = false)
+    public function new(array $data): int
     {
-        list($columns, $values) = $this->prepareDataForSearchStmt($data, $like);
+        list($columns, $values) = $this->prepareStmt($data);
 
         $db = $this->newDbCon();
-        $stmt = $db->prepare("SELECT * from $this->table where $columns");
+        $stmt = $db->prepare('INSERT INTO ' . $this->table . ' SET ' . $columns);
+
         $stmt->execute($values);
 
-        return $stmt->fetch();
+        return $db->lastInsertId();
     }
 
     private function prepareStmt(array $data): array
@@ -132,21 +138,6 @@ abstract class Model
         }
 
         return [$columns, $values];
-    }
-
-    /**
-     * Insert new data in table
-     */
-    public function new(array $data): int
-    {
-        list($columns, $values) = $this->prepareStmt($data);
-
-        $db = $this->newDbCon();
-        $stmt = $db->prepare('INSERT INTO ' . $this->table . ' SET ' . $columns);
-
-        $stmt->execute($values);
-
-        return $db->lastInsertId();
     }
 
     /**
